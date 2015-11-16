@@ -1,0 +1,144 @@
+// JavaScript Document
+var numberOfAdvancedSchools=0;
+var action=0;
+
+//// ACR 2012
+phase1Name= new Array();
+phase1FacId = new Array();
+phase1Prev = new Array();
+phase1FacId[0]="f3d822caccd0151da6a8cb3590000f58";
+phase1Name[0] = "Pokuase Methodist1";
+phase1Prev[0] = 439;
+phase1FacId[1]="835cca48ecc1ef2b48bdcc28270007f0";
+phase1Name[1]="Akuakrom Methodist";
+phase1Prev[1] = 161;
+phase1FacId[2]="4a3677dce31282d0e8d40b56e9000733";
+phase1Name[2]="Katapor M A";
+phase1Prev[2] = 293;
+phase1FacId[3]="457704ee8f264ec25f489b36c9000b01";
+phase1Name[3]="Sacred Heart R.C";
+phase1Prev[3] = 330;
+phase1FacId[4]="3329aaa048059dffba4c7e04ac0002df";
+phase1Name[4]="Sarpeiman M A";
+phase1Prev[4] = 388;
+phase1FacId[5]="31453172fc7b40b2728451ebf4000850";
+phase1Name[5]="St Anthony RC";
+phase1Prev[5] = 479;
+phase1FacId[6]="22947fbbdaa77eace1031658cb000f5c";
+phase1Name[6]="Ogua SDA";
+phase1Prev[6] = 138;
+phase1FacId[7]="21bd8d914fc7c749d51fd5bbec000542";
+phase1Name[7]="Samsam Odumase M A";
+phase1Prev[7] = 181;
+phase1FacId[8]="09b99d665762a810a7766a9231000edd";
+phase1Name[8]="Ayikai Doblo M A";
+phase1Prev[8] = 298;
+phase1FacId[9]="08616dbf15f84166f88d48f320000a1b";
+phase1Name[9]="Mamobi Prisons";
+phase1Prev[9] = 436;
+
+/// ACR 2013
+phase2Name= new Array();
+phase2FacId = new Array();
+phase2Prev= new Array();
+phase2FacId[0]="b814898c13113e3e159c8375050008e8";
+phase2Name[0]="St Peter's Anglican";
+phase2Prev[0] = 320;
+phase2FacId[1]="00614645b75962b9e389726956000fb4";
+phase2Name[1]="Manhean MA Basic";
+phase2Prev[1] = 171;
+phase2FacId[2]="f40b7f84495675adf6670c65ef00081d";
+phase2Name[2] ="Blessed Queens & Kings";
+phase2Prev[2] = 0;
+phase2FacId[3]="d8a1352fc4a9df1d16f756ea38000128";
+phase2Name[3] ="Achiaman MA Primary";
+phase2Prev[3] = 433;
+phase2FacId[4]="c8e4fae941b5753c8f3c954d61000a9f";
+phase2Name[4] ="New Achimota Presby";
+phase2Prev[4] = 510;
+phase2FacId[5]="c86e5da2a912cb5a90a592f2620008ab";
+phase2Name[5]="Doblo Gonno Meth. Primary";
+phase2Prev[5] = 246;
+phase2FacId[6]="b480a7860ce1d66d86979e73990002df";
+phase2Name[6]="Odumase Amanfro M A";
+phase2Prev[6] = 269;
+phase2FacId[7]="90d7292855c3af0dafb9f990a0000b4d";
+phase2Name[7]="St Cyprians Anglican Basic";
+phase2Prev[7] = 329;
+phase2FacId[8]="8724b9e0e468a47203c7af05040006ed";
+phase2Name[8]="Samlena School Complex";
+phase2Prev[8] = 0;
+phase2FacId[9]="293e475ad44bfd96bb13b4dc9b000237";
+phase2Name[9]="Mayera Presby Primary 'B'";
+phase2Prev[9] = 268;
+
+
+/// WVI 2013
+wv13_Name= new Array();
+wv13_FacId = new Array();
+wv13_Prev = new Array();
+wv13_FacId[0]="0496ac53bb9ba51bf126098bbe0000fa";
+wv13_Name[0]="Tease R C Primary";
+wv13_Prev[0]=0;
+wv13_FacId[1]="4e8c5d651bc03a94fd22226eaf000ca3";
+wv13_Name[1]="Samanshia Presbyterian Primary";
+wv13_Prev[1]=0;
+wv13_FacId[2]="4a1957f0bc999d4f5e6707a51f000839";
+wv13_Name[2]="Ntanlkoro D/A Primary";
+wv13_Prev[2]=0;
+wv13_FacId[3]="bd789c258807e7273848cdd6aa000d07";
+wv13_Name[3]="Krabonso Methodist Primary";
+wv13_Prev[3]=0;
+wv13_FacId[4]="343eac8c70934e8d4a9fd3c63d000890";
+wv13_Name[4]="St. Peter's R C Primary";
+wv13_Prev[4]=398;
+wv13_FacId[5]="01f78add826f418316ac6a6a9f000883";
+wv13_Name[5]="Paninamisa D A Primary";
+wv13_Prev[5]=0;
+wv13_FacId[6]="b82acaa4b6f2a577e4a563a7a2000c52";
+wv13_Name[6]="Tease Salem Presby Primary";
+wv13_Prev[6]=0;
+wv13_FacId[7]="3dc13212d91c04d67b93b6c9dc000b69";
+wv13_Name[7]="Odomase Presby Primary";
+wv13_Prev[7]=0;
+/*
+wv13_FacId[]="777109b94e47c117756355d275000fb6";
+wv13_Name[]="Tease Salem Presby Primary";
+wv13_Prev[]=0;
+*/
+
+/// WVI 2014
+wv14_Name= new Array();
+wv14_FacId = new Array();
+wv14_Prev = new Array();
+wv14_FacId[0]="463bad4e2c20ef0512d45c2486000f1a";
+wv14_Name[0]="Salvation Army";
+wv14_Prev[0]=0;
+wv14_FacId[1]="de6b6ed1df66dc9645b419462a000ec5";
+wv14_Name[1]="Odurokrom D/A";
+wv14_Prev[1]=0;
+wv14_FacId[2]="f0f6975e8d13da2523c476dbad00025b";
+wv14_Name[2]="Adjeikrom Presby";
+wv14_Prev[2]=0;
+wv14_FacId[3]="59ceaf10f6fc9beb40b5758794000d11";
+wv14_Name[3]="Bosuso Presby";
+wv14_Prev[3]=0;
+wv14_FacId[4]="43b76876bad6e926e282da7eae000145";
+wv14_Name[4]="St. Francis (R.C.)";
+wv14_Prev[4]=0;
+wv14_FacId[5]="233cf377618eb3bb28499ff770000eeb";
+wv14_Name[5]="Bosuso D/A";
+wv14_Prev[5]=0;
+wv14_FacId[6]="5d8ec94d99e01c50653a793d10000867";
+wv14_Name[6]="Kpatchu D/A";
+wv14_Prev[6]=0;
+wv14_FacId[7]="57d101731e41abdae12a6ff9b1000ea2";
+wv14_Name[7]="Abujuro D/A";
+wv14_Prev[7]=0;
+wv14_FacId[8]="3e267544f902657b7ab3ecc33d0005ee";
+wv14_Name[8]="Kwaakue D/A ";
+wv14_Prev[8]=0;
+wv14_FacId[9]="4901cb17ba655dbdeadb8ddb8f000728";
+wv14_Name[9]="Gyengyen D/A";
+wv14_Prev[9]=0;
+
